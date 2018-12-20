@@ -42,6 +42,11 @@ cp INFO.txt /tmp/home/marta
 cp INFO.txt /tmp/home/jordi
 cp INFO.txt /tmp/home/admin
 
+cp INFO.txt /home/local01
+cp INFO.txt /home/local02
+cp INFO.txt /home/local03
+
+
 chown -R pere.users /tmp/home/pere
 chown -R pau.users /tmp/home/pau
 chown -R anna.alumnes /tmp/home/anna
@@ -55,4 +60,8 @@ echo -e "anna\nanna" | smbpasswd -a anna
 echo -e "marta\nmarta" | smbpasswd -a marta
 echo -e "jordi\njordi" | smbpasswd -a jordi
 echo -e "admin\nadmin" | smbpasswd -a admin
+
+echo -e "local01\nlocal01" | smbpasswd -a local01
+echo -e "local02\nlocal02" | smbpasswd -a local02
+echo -e "local03\nlocal03" | smbpasswd -a local03
 
