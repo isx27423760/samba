@@ -1,0 +1,796 @@
+dn: dc=edt,dc=org
+dc: edt
+description: Escola del treball de Barcelona
+objectClass: dcObject
+objectClass: organization
+o: edt.org
+
+dn: ou=maquines,dc=edt,dc=org
+ou: maquines
+description: Container per a maquines linux
+objectClass: organizationalunit
+
+dn: ou=clients,dc=edt,dc=org
+ou: clients
+description: Container per a clients linux
+objectClass: organizationalunit
+
+dn: ou=productes,dc=edt,dc=org
+ou: productes
+description: Container per a productes linux
+objectClass: organizationalunit
+
+dn: ou=usuaris,dc=edt,dc=org
+ou: usuaris
+description: Container per usuaris del sistema linux
+objectClass: organizationalunit
+
+dn: ou=hosts,dc=edt,dc=org
+ou: hosts
+description: Container per a hosts linux
+objectClass: organizationalunit
+
+dn: ou=keys,dc=edt,dc=org
+ou: keys
+description: Container per a keys linux
+objectClass: organizationalunit
+
+dn: ou=certs,dc=edt,dc=org
+ou: certs
+description: Container per a certs linux
+objectClass: organizationalunit
+
+dn: ou=domains,dc=edt,dc=org
+ou: domains
+description: Container per a domains linux
+objectClass: organizationalunit
+
+dn: o=asia,ou=clients,dc=edt,dc=org
+o: asia
+description: Clients del continent de asia
+objectClass: organization
+
+dn: o=africa,ou=clients,dc=edt,dc=org
+o: africa
+description: Clients del continent de africa
+objectClass: organization
+
+dn: o=europa,ou=clients,dc=edt,dc=org
+o: europa
+description: Clients del continent de europa
+objectClass: organization
+
+dn: o=eu,o=europa,ou=clients,dc=edt,dc=org
+o: eu
+description: Clients del continent europa: unio europea
+objectClass: organization
+
+dn: o=noneu,o=europa,ou=clients,dc=edt,dc=org
+o: noneu
+description: Clients del continent europa: no unio europea
+objectClass: organization
+
+dn: uid=pau,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Pau Pou
+cn: Pauet Pou
+sn: Pou
+homePhone: 555-222-2220
+mail: pau@edt.org
+description: Watch out for this guy
+ou: Profes
+uid: pau
+uidNumber: 5000
+gidNumber: 100
+homeDirectory: /tmp/home/pau
+userPassword:: e1NTSEF9TkRraXBlc05RcVRGRGdHSmZ5cmFMei9jc1pBSWxrMi8=
+
+dn: uid=pere,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Pere Pou
+sn: Pou
+homePhone: 555-222-2221
+mail: pere@edt.org
+description: Watch out for this guy
+ou: Profes
+uid: pere
+uidNumber: 5001
+gidNumber: 100
+homeDirectory: /tmp/home/pere
+userPassword:: e1NTSEF9Z2htdFJMMTFZdFhvVWhJUDd6NmY3bmI4UkNOYWRGZSs=
+
+dn: uid=anna,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Anna Pou
+cn: Anita Pou
+sn: Pou
+homePhone: 555-222-2222
+mail: anna@edt.org
+description: Watch out for this girl
+ou: Alumnes
+uid: anna
+uidNumber: 5002
+gidNumber: 600
+homeDirectory: /tmp/home/anna
+userPassword:: e1NTSEF9Qm00QjNCdS9mdUg2QmJ5OWxneGZGQXdMWXJLMFJiT3E=
+
+dn: uid=marta,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Marta Mas
+sn: Mas
+homePhone: 555-222-2223
+mail: marta@edt.org
+description: Watch out for this girl
+ou: Alumnes
+uid: marta
+uidNumber: 5003
+gidNumber: 600
+homeDirectory: /tmp/home/marta
+userPassword:: e1NTSEF9OSsxRjJmNXZjVzh6L3RtU3pZTldkbHo1R2JEQ3lvT3c=
+
+dn: uid=Jordi,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Jordi Mas
+cn: Giorgios Mas
+sn: Mas
+homePhone: 555-222-2224
+mail: jordi@edt.org
+description: Watch out for this girl
+ou: Alumnes
+ou: Profes
+uid: jordi
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /tmp/home/jordi
+userPassword:: e1NTSEF9VDVqck1ncEp3WlpndTBhemtMSVZvWWhpRzA4L0tHVXY=
+
+dn: uid=admin,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Administrador Sistema
+cn: System Admin
+sn: System
+homePhone: 555-222-2225
+mail: anna@edt.org
+description: Watch out for this girl
+ou: system
+ou: admin
+uid: admin
+uidNumber: 10
+gidNumber: 10
+homeDirectory: /tmp/home/admin
+userPassword:: e1NTSEF9NG1TMEZ5Y1djNWJrcFc4L2EzOTZTR05EVFFVbEZTWDM=
+
+dn: uid=user01,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user01
+cn: alumne01 de 1asix de todos los santos
+sn: alumne01
+homePhone: 555-222-0001
+mail: user01@edt.org
+description: alumne de 1asix
+ou: 1asix
+uid: user01
+uidNumber: 7001
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user01
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user02,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user02
+cn: alumne02 Pou Prat
+sn: alumne02
+homePhone: 555-222-0002
+mail: user02@edt.org
+description: alumne de 1asix
+ou: 1asix
+uid: user02
+uidNumber: 7002
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user02
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user03,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user03
+cn: alumne03 Pou Prat
+sn: alumne03
+homePhone: 555-222-0003
+mail: user03@edt.org
+description: alumne de 1asix
+ou: 1asix
+uid: user03
+uidNumber: 7003
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user03
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user04,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user04
+cn: alumne04 Pou Puig
+sn: alumne04
+homePhone: 555-222-0004
+mail: user04@edt.org
+description: alumne de 1asix
+ou: 1asix
+uid: user04
+uidNumber: 7004
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user04
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user05,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user05
+cn: alumne05 Pou Prat
+sn: alumne05
+homePhone: 555-222-0005
+mail: user05@edt.org
+description: alumne de 1asix
+ou: 1asix
+uid: user05
+uidNumber: 7005
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user05
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user06,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user06
+cn: alumne06 de 2asix de todos los santos
+sn: alumne06
+homePhone: 555-222-0006
+mail: user06@edt.org
+description: alumne de 2asix
+ou: 2asix
+uid: user06
+uidNumber: 7006
+gidNumber: 611
+homeDirectory: /tmp/home/2asix/user06
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user07,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user07
+cn: alumne07 de 2asix de todos los santos
+sn: alumne07
+homePhone: 555-222-0007
+mail: user07@edt.org
+description: alumne de 2asix
+ou: 2asix
+uid: user07
+uidNumber: 7007
+gidNumber: 611
+homeDirectory: /tmp/home/2asix/user07
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user08,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user08
+cn: alumne08 de 2asix de todos los santos
+sn: alumne08
+homePhone: 555-222-0008
+mail: user08@edt.org
+description: alumne de 2asix
+ou: 2asix
+uid: user08
+uidNumber: 7008
+gidNumber: 611
+homeDirectory: /tmp/home/2asix/user08
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user09,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user09
+cn: alumne09 de 2asix de todos los santos
+sn: alumne09
+homePhone: 555-222-0009
+mail: user09@edt.org
+description: alumne de 2asix
+ou: 2asix
+uid: user09
+uidNumber: 7009
+gidNumber: 611
+homeDirectory: /tmp/home/2asix/user09
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=user10,ou=usuaris,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: user10
+cn: alumne10 de 2asix de todos los santos
+sn: alumne10
+homePhone: 555-222-0016
+mail: user10@edt.org
+description: alumne de 2asix
+ou: 2asix
+uid: user10
+uidNumber: 7010
+gidNumber: 611
+homeDirectory: /tmp/home/2asix/user10
+userPassword:: e1NIQX1vdmY4dGEvcmVZUC91MnpqMGFmcEh0OHlFMUE9
+
+dn: uid=mao,o=asia,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: mao tse tung
+cn: mao zedong
+sn: mao
+homePhone: 777-222-0001
+mail: mao@asia.edt.org
+description: client de zong guo
+ou: 1wiaw
+uid: mao
+uidNumber: 11001
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/mao
+userPassword:: e1NIQX04OUY5eDJQNVhtS2Fmbkg1NHFMdW5mUThoMFk9
+
+dn: uid=ho,o=asia,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: ho chi minh
+sn: ho
+homePhone: 777-222-0002
+mail: ho@asia.edt.org
+description: client de vietnam
+ou: 1wiaw
+uid: ho
+uidNumber: 11002
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/ho
+userPassword:: e1NIQX1tbmFvVjYwNW0wa3JvQmg1MFBvdGNYNUVNTEk9
+
+dn: uid=hirohito,o=asia,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: hirohito
+sn: hiro
+homePhone: 777-222-0003
+mail: hiro@asia.edt.org
+description: client de japo
+ou: 1wiaw
+uid: hiro
+uid: hirohito
+uidNumber: 11003
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/hiro
+userPassword:: e1NIQX1ieWxOYlBLRUtBaXJUTnhIRE1vTmo4akhyS0E9
+
+dn: uid=nelson,o=africa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: nelson mandela
+cn: madiba
+sn: nelson
+homePhone: 778-222-0004
+mail: nelson@africa.edt.org
+description: client de sud africa
+ou: 1wiaw
+uid: nelson
+uidNumber: 11004
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/nelson
+userPassword:: e1NIQX0yUlgwNlhEbE5sUWdMQnoxeGk1Z3B5Z0tnaGs9
+
+dn: uid=robert,o=africa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: robert mugabe
+sn: robert
+homePhone: 778-222-0005
+mail: robert@africa.edt.org
+description: client de rodesia, zimbawe
+ou: 1wiaw
+uid: robert
+uidNumber: 11005
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/robert
+userPassword:: e1NIQX1FdWtwUHNhekRIK29vSkpxOUNnSDZTbkJhRTg9
+
+dn: uid=ali,o=africa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: ali bey
+cn: domenech badia
+sn: ali
+homePhone: 778-222-0006
+mail: ali@africa.edt.org
+description: client de magreb, arabia
+ou: 1wiaw
+uid: ali
+uidNumber: 11006
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/ali
+userPassword:: e1NIQX10Q3B0azllV2tWSWk5dit5LzkxaE45azhITnM9
+
+dn: uid=konrad,o=eu,o=europa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: konrad adenauer
+sn: konrad
+homePhone: 779-222-0007
+mail: konrad@eu.europa.edt.org
+description: client de alemanya
+ou: 2wiaw
+uid: konrad
+uidNumber: 11007
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/konrad
+userPassword:: e1NIQX12N00vME9mVFdjZEk5aXJINTlXOG03RmdMNms9
+
+dn: uid=humphrey,o=eu,o=europa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: humpprey appleby
+sn: humphrey
+homePhone: 779-222-0008
+mail: humprey@eu.europa.edt.org
+description: client de united kingdom
+ou: 2wiaw
+uid: humphrey
+uidNumber: 11008
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/humphrey
+userPassword:: e1NIQX02V3ZVc0w0cWV3R0J4UEJrMHh4d1pxOGpTRms9
+
+dn: uid=carles,o=eu,o=europa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: carles puigdemon
+sn: carles
+homePhone: 779-222-0009
+mail: carles@eu.europa.edt.org
+description: client de polonia
+ou: 2wiaw
+uid: carles
+uidNumber: 11009
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/carles
+userPassword:: e1NIQX1ONTlKSHNxb2Zlc25TL3VOL2hUZ1luaUFIVmM9
+
+dn: uid=francisco,o=noneu,o=europa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: francisco franco bahamonde
+cn: paca
+sn: francisco
+homePhone: 779-222-0010
+mail: francisco@noneu.europa.edt.org
+description: client de is different
+ou: 2wiaw
+uid: francisco
+uidNumber: 11010
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/fracisco
+userPassword:: e1NIQX1FeFd1WWlsRVEyZVdpcFE2SVo4NDN2bW9FUzA9
+
+dn: uid=vladimir,o=noneu,o=europa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: vladimir putin
+sn: vladimir
+homePhone: 779-222-0011
+mail: vladimir@noneu.europa.edt.org
+description: client de rusia
+ou: 2wiaw
+uid: vladimir
+uidNumber: 11011
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/vladimir
+userPassword:: e1NIQX0zSkdHb0dCNGN6a1Zwdnk2czA1WkVndml0SVE9
+
+dn: uid=jorge,o=noneu,o=europa,ou=clients,dc=edt,dc=org
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: jorge mario bergoglio
+cn: francisco
+cn: papa
+cn: sua santidad
+sn: jorge
+homePhone: 779-222-0012
+mail: jorge@noneu.europa.edt.org
+description: client del cel
+ou: 2wiaw
+uid: jorge
+uidNumber: 11012
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/jorge
+userPassword:: e1NIQX1NL2tuTkU0SG5nRFQra1hZZ3pzRTV6VWlQdXc9
+
+dn: ou=grups,dc=edt,dc=org
+ou: groups
+ou: grups
+description: Container per a grups
+objectClass: organizationalunit
+
+dn: cn=cup,ou=grups,dc=edt,dc=org
+cn: cup
+gidNumber: 0
+description: Grup de la CUP, es a dir, els root del systema
+memberUid: admin
+objectClass: posixGroup
+
+dn: cn=admin,ou=grups,dc=edt,dc=org
+cn: admin
+cn: system
+gidNumber: 10
+description: Grup de administracio system
+memberUid: admin
+objectClass: posixGroup
+
+dn: cn=alumnes,ou=grups,dc=edt,dc=org
+cn: alumnes
+gidNumber: 600
+description: Grup de alumnes
+memberUid: anna
+memberUid: marta
+memberUid: Jordi
+objectClass: posixGroup
+
+dn: cn=profes,ou=grups,dc=edt,dc=org
+cn: profes
+gidNumber: 100
+description: Grup de profes
+memberUid: pau
+memberUid: pere
+objectClass: posixGroup
+
+dn: cn=1wiaw,ou=grups,dc=edt,dc=org
+cn: 1wiaw
+gidNumber: 650
+description: Grup de 1wiaw
+memberUid: mao
+memberUid: ho
+memberUid: hirohito
+memberUid: nelson
+memberUid: robert
+memberUid: ali
+objectClass: posixGroup
+
+dn: cn=2wiaw,ou=grups,dc=edt,dc=org
+cn: 2wiaw
+gidNumber: 651
+description: Grup de 2wiaw
+memberUid: konrad
+memberUid: humphrey
+memberUid: carles
+memberUid: francisco
+memberUid: vladimir
+memberUid: jorge
+objectClass: posixGroup
+
+dn: cn=1asix,ou=grups,dc=edt,dc=org
+cn: 1asix
+gidNumber: 610
+description: Grup de 1asix
+memberUid: user01
+memberUid: user02
+memberUid: user03
+memberUid: user04
+memberUid: user05
+objectClass: posixGroup
+
+dn: cn=2asix,ou=grups,dc=edt,dc=org
+cn: 2asix
+gidNumber: 611
+description: Grup de 2asix
+memberUid: user06
+memberUid: user07
+memberUid: user08
+memberUid: user09
+memberUid: user10
+objectClass: posixGroup
+
+dn: sambaDomainName=SAMBA,dc=edt,dc=org
+sambaDomainName: SAMBA
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216
+sambaAlgorithmicRidBase: 1000
+objectClass: sambaDomain
+sambaNextUserRid: 1000
+sambaMinPwdLength: 5
+sambaPwdHistoryLength: 0
+sambaLogonToChgPwd: 0
+sambaMaxPwdAge: -1
+sambaMinPwdAge: 0
+sambaLockoutDuration: 30
+sambaLockoutObservationWindow: 30
+sambaLockoutThreshold: 0
+sambaForceLogoff: -1
+sambaRefuseMachinePwdChange: 0
+
+dn: sambaDomainName=MYGROUP,dc=edt,dc=org
+objectClass: sambaDomain
+sambaDomainName: MYGROUP
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216
+sambaNextRid: 1000
+
+dn: sambaDomainName=sambaDomain,dc=edt,dc=org
+objectClass: sambaDomain
+objectClass: sambaUnixIdPool
+sambaDomainName: sambaDomain
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216
+uidNumber: 1000
+gidNumber: 1000
+
+dn: uid=root,ou=usuaris,dc=edt,dc=org
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: root
+cn: root
+sn: root
+gidNumber: 0
+uidNumber: 0
+homeDirectory: /home/root
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+sambaHomePath: \\PDC-SRV\root
+sambaHomeDrive: H:
+sambaProfilePath: \\PDC-SRV\profiles\root
+sambaPrimaryGroupSID: S-1-5-21-3796649390-3751491423-1319886216-512
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216-500
+loginShell: /bin/false
+gecos: Netbios Domain Administrator
+sambaNTPassword: 55F79BF273802801CFC79712AAC292F3
+sambaAcctFlags: [U]
+sambaPwdLastSet: 1546513544
+sambaLMPassword: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+sambaPwdMustChange: 1550401544
+userPassword:: e1NTSEF9SEVueCszZEYzSmxvQlhZYUJRbU8raTBDd3R4emNteHY=
+shadowLastChange: 17899
+shadowMax: 45
+
+dn: uid=nobody,ou=usuaris,dc=edt,dc=org
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: nobody
+sn: nobody
+gidNumber: 514
+uid: nobody
+uidNumber: 999
+homeDirectory: /nonexistent
+sambaPwdLastSet: 0
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+sambaPwdMustChange: 2147483647
+sambaHomePath: \\PDC-SRV\nobody
+sambaHomeDrive: H:
+sambaProfilePath: \\PDC-SRV\profiles\nobody
+sambaPrimaryGroupSID: S-1-5-21-3796649390-3751491423-1319886216-514
+sambaLMPassword: NO PASSWORDXXXXXXXXXXXXXXXXXXXXX
+sambaNTPassword: NO PASSWORDXXXXXXXXXXXXXXXXXXXXX
+sambaAcctFlags: [NUD        ]
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216-501
+loginShell: /bin/false
+
+dn: cn=Domain Admins,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Admins
+gidNumber: 512
+memberUid: root
+description: Netbios Domain Administrators
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216-512
+sambaGroupType: 2
+displayName: Domain Admins
+
+dn: cn=Domain Users,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Users
+gidNumber: 513
+description: Netbios Domain Users
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216-513
+sambaGroupType: 2
+displayName: Domain Users
+
+dn: cn=Domain Guests,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Guests
+gidNumber: 514
+description: Netbios Domain Guests Users
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216-514
+sambaGroupType: 2
+displayName: Domain Guests
+
+dn: cn=Domain Computers,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Computers
+gidNumber: 515
+description: Netbios Domain Computers accounts
+sambaSID: S-1-5-21-3796649390-3751491423-1319886216-515
+sambaGroupType: 2
+displayName: Domain Computers
+
+dn: cn=Administrators,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Administrators
+gidNumber: 544
+description: Netbios Domain Members can fully administer the computer/sambaDom
+ ainName
+sambaSID: S-1-5-32-544
+sambaGroupType: 4
+displayName: Administrators
+
+dn: cn=Account Operators,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Account Operators
+gidNumber: 548
+description: Netbios Domain Users to manipulate users accounts
+sambaSID: S-1-5-32-548
+sambaGroupType: 4
+displayName: Account Operators
+
+dn: cn=Print Operators,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Print Operators
+gidNumber: 550
+description: Netbios Domain Print Operators
+sambaSID: S-1-5-32-550
+sambaGroupType: 4
+displayName: Print Operators
+
+dn: cn=Backup Operators,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Backup Operators
+gidNumber: 551
+description: Netbios Domain Members can bypass file security to back up files
+sambaSID: S-1-5-32-551
+sambaGroupType: 4
+displayName: Backup Operators
+
+dn: cn=Replicators,ou=grups,dc=edt,dc=org
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Replicators
+gidNumber: 552
+description: Netbios Domain Supports file replication in a sambaDomainName
+sambaSID: S-1-5-32-552
+sambaGroupType: 4
+displayName: Replicators
+
