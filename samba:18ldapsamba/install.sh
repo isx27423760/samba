@@ -53,6 +53,28 @@ chown -R anna.alumnes /tmp/home/anna
 chown -R marta.alumnes /tmp/home/marta
 chown -R jordi.users /tmp/home/jordi
 chown -R admin.wheel /tmp/home/admin
+#------------------------------------------------------
+
+mkdir /var/lib/samba/public
+chmod 777 /var/lib/samba/public
+cp /opt/docker/* /var/lib/samba/public/.
+mkdir /var/lib/samba/privat
+cp /opt/docker/smb.conf /etc/samba/smb.conf
+cp /opt/docker/*.md /var/lib/samba/privat/.
+
+# -----------------------------------------------------------
+cp /opt/docker/smbldap.conf /etc/smbldap-tools/.
+cp /opt/docker/smbldap_bind.conf /etc/smbldap-tools/.
+
+smbpasswd -w secret
+net getlocalsid
+net getdomainsid
+
+echo -e "jupiter\njupiter" | smbldap-populate
+pdbedit -L
+ldapsearch -x -LLL
+
+
 
 echo -e "pere\npere" | smbpasswd -a pere
 echo -e "pau\npau" | smbpasswd -a pau
@@ -64,4 +86,8 @@ echo -e "admin\nadmin" | smbpasswd -a admin
 echo -e "local01\nlocal01" | smbpasswd -a local01
 echo -e "local02\nlocal02" | smbpasswd -a local02
 echo -e "local03\nlocal03" | smbpasswd -a local03
+
+ldapsearch -x -LLL -b 'dc=edt,dc=org' 'uid=pere'
+pdbedit -L
+
 
