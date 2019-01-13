@@ -11,7 +11,7 @@ Es dira samba:18homes
 
        **$docker create network sambanet** 
 
-* **ldapserver:18group** : Servidor ldap que tenim creat amb usuaris ldap y que cada un de ells pertany a diferents grups. (isx27423760/ldapserver18/ldapserver:18group)
+* **ldapserver:18group** : Servidor ldap que tenim creat amb usuaris ldap y que cada un de ells pertany a diferents grups. 
 
 * **samba:18homes** : Servidor SAMBA amb usuaris locals i usuaris LDAP unix, es crearan usuaris locals i alguns usuaris de LDAP.
 Es crearan tambe els homes de aquest usuaris ldap i le tindrem que posar els permisos al cual pertany cada user.
@@ -75,21 +75,21 @@ Es crearan tambe els homes de aquest usuaris ldap i le tindrem que posar els per
 * **SERVER LDAP: ldapserver:18group**
 
 ```
-    $ docker run --rm --name ldap -h ldap --network sambanet -it ldapserver:18group
+    $ docker run --rm --name ldap -h ldap --network sambanet -it francs2/ldapserver:18group
 
 ```
 
 * **SERVER SAMBA: samba:18homes**
 
 ```
-    $ docker run --rm --privileged --name samba -h samba --network sambanet -it samba:18homes
+    $ docker run --rm --privileged --name samba -h samba --network sambanet -it francs2/samba:18homes
 
 ```
 
 * **HOST PAM : hostpam:18samba**
 
 ```
-    $ docker run --rm --privileged --name host -h host --network sambanet -it hostpam:18samba
+    $ docker run --rm --privileged --name host -h host --network sambanet -it francs2/hostpam:18samba
 
 ```
 
